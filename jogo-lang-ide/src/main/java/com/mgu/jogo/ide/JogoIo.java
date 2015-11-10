@@ -5,7 +5,7 @@ import javafx.stage.FileChooser;
 import java.io.*;
 import java.util.Optional;
 
-public class LogoIo {
+public class JogoIo {
 
     public static Optional<File> saveDialog() {
         final File file = fileChooser().showSaveDialog(null);

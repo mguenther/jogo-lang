@@ -1,7 +1,7 @@
 package com.mgu.jogo.ide.editor;
 
 import com.mgu.jogo.ide.JavaFxTurtle;
-import com.mgu.jogo.ide.LogoIo;
+import com.mgu.jogo.ide.JogoIo;
 import com.mgu.jogo.interpreter.Interpreter;
 import com.mgu.jogo.interpreter.Turtle;
 import javafx.application.Platform;
@@ -22,7 +22,6 @@ import org.fxmisc.richtext.LineNumberFactory;
 import org.fxmisc.richtext.PlainTextChange;
 import org.fxmisc.richtext.StyleSpans;
 import org.reactfx.EventStream;
-import org.reactfx.util.Try;
 
 import java.io.IOException;
 import java.net.URL;
@@ -68,11 +67,11 @@ public class EditorController implements Initializable {
     }
 
     public void onLoadFileClicked(final ActionEvent actionEvent) {
-        LogoIo.loadDialog().ifPresent(file -> this.codeArea.replaceText(LogoIo.load(file)));
+        JogoIo.loadDialog().ifPresent(file -> this.codeArea.replaceText(JogoIo.load(file)));
     }
 
     public void onSaveFileClicked(final ActionEvent actionEvent) {
-        LogoIo.saveDialog().ifPresent(file -> LogoIo.save(this.codeArea.getText(), file));
+        JogoIo.saveDialog().ifPresent(file -> JogoIo.save(this.codeArea.getText(), file));
     }
 
     public void onAboutClicked(final ActionEvent actionEvent) {

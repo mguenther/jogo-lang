@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 
-public class LogoIde extends Application {
+public class JogoIde extends Application {
 
     private EditorController controller;
 
@@ -23,7 +23,7 @@ public class LogoIde extends Application {
         final Parent root = fxmlLoader.load(fxmlLocation.openStream());
         this.controller = fxmlLoader.getController();
         final Scene scene = new Scene(root, 800, 600);
-        scene.getStylesheets().add(LogoIde.class.getResource("logo-keywords.css").toExternalForm());
+        scene.getStylesheets().add(JogoIde.class.getResource("logo-keywords.css").toExternalForm());
         stage.setTitle("JOGO IDE");
         stage.setScene(scene);
         stage.show();
