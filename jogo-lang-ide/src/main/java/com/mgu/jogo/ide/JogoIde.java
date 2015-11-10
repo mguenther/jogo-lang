@@ -22,7 +22,7 @@ public class JogoIde extends Application {
         fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
         final Parent root = fxmlLoader.load(fxmlLocation.openStream());
         this.controller = fxmlLoader.getController();
-        final Scene scene = new Scene(root, 800, 600);
+        final Scene scene = new Scene(root, 1024, 768);
         scene.getStylesheets().add(JogoIde.class.getResource("logo-keywords.css").toExternalForm());
         stage.setTitle("JOGO IDE");
         stage.setScene(scene);
