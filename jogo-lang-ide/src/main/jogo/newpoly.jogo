@@ -1,0 +1,10 @@
+to newpoly :side :angle
+  repeat 100 [
+    forward side
+    right angle
+    forward side
+    right 2 * angle
+  ]
+end
+
+newpoly 50 30

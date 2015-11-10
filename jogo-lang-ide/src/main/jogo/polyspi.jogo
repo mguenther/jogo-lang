@@ -1,0 +1,9 @@
+to polyspi :side :angle
+  repeat 25 [
+    forward side
+    right angle
+    side = side + 10
+  ]
+end
+
+polyspi 20 117

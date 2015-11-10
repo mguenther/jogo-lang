@@ -1,0 +1,29 @@
+to arcr :radius :degree
+  repeat degree [
+    forward radius
+    right 1
+  ]
+end
+
+to arcl :radius :degree
+  repeat degree [
+    forward radius
+    left 1
+  ]
+end
+
+to petal :size
+  arcr size 60
+  right 120
+  arcr size 60
+  right 120
+end
+
+to flower :size
+  repeat 6 [
+    petal size
+    right 60
+  ]
+end
+
+flower 2

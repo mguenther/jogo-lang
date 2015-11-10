@@ -1,0 +1,29 @@
+to arcr :radius :degree
+  repeat degree [
+    forward radius
+    right 1
+  ]
+end
+
+to arcl :radius :degree
+  repeat degree [
+    forward radius
+    left 1
+  ]
+end
+
+to ray :r
+  repeat 2 [
+    arcl r 90
+    arcr r 90
+  ]
+end
+
+to sun :size
+  repeat 9 [
+    ray size
+    right 160
+  ]
+end
+
+sun 1

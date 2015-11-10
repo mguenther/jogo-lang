@@ -1,0 +1,8 @@
+to poly :side :angle
+  repeat 100 [
+    forward side
+    right angle
+  ]
+end
+
+poly 50 72

@@ -1,0 +1,14 @@
+.keyword {
+    -fx-fill: blue;
+    -fx-font-weight: bold;
+}
+
+.argument {
+    -fx-fill: violet;
+    -fx-font-weight: bold;
+}
+
+.numbers {
+    -fx-fill: darkgrey;
+    -fx-font-weight: bold;
+}

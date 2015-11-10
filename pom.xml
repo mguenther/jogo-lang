@@ -31,11 +31,24 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- Utilities -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.0</version>
             </dependency>
+            <!-- JavaFX -->
+            <dependency>
+                <groupId>org.reactfx</groupId>
+                <artifactId>reactfx</artifactId>
+                <version>1.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.fxmisc.richtext</groupId>
+                <artifactId>richtextfx</artifactId>
+                <version>0.3</version>
+            </dependency>
+            <!-- TEST -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
@@ -60,6 +73,7 @@
     <modules>
         <module>jogo-lang-parser</module>
         <module>jogo-lang-interpreter</module>
+        <module>jogo-lang-ide</module>
     </modules>
 
 </project>

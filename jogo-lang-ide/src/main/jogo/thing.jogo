@@ -1,0 +1,44 @@
+to thing
+  forward 60
+  right 90
+  forward 60
+  right 90
+  forward 30
+  right 90
+  forward 30
+  right 90
+  forward 60
+  right 90
+  forward 15
+  right 90
+  forward 15
+  right 90
+  forward 30
+end
+
+to thing1
+  repeat 4 [
+    thing
+  ]
+end
+
+to thing2
+  repeat 9 [
+    thing
+    right 10
+    forward 30
+  ]
+end
+
+to thing3
+  repeat 8 [
+    thing
+    left 45
+    forward 60
+  ]
+end
+
+
+lt 90
+
+thing3

@@ -1,0 +1,26 @@
+to arcr :radius :degree
+  repeat degree [
+    forward radius
+    right 1
+  ]
+end
+
+to arcl :radius :degree
+  repeat degree [
+    forward radius
+    left 1
+  ]
+end
+
+to circle :radius
+  arcr radius 360
+end
+
+to circles
+  repeat 9 [
+    circle 1
+    right 40
+  ]
+end
+
+circles

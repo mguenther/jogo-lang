@@ -1,0 +1,8 @@
+to triangle
+  repeat 3 [
+    forward 100
+    right 120
+  ]
+end
+
+triangle
