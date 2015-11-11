@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mguenther/jogo-lang.svg?branch=master)](https://travis-ci.org/mguenther/jogo-lang.svg)
+
 # JOGO - A Java-based implementation of a subset of LOGO
 
 After reading [Turtle Geometry](https://books.google.de/books/about/Turtle_geometry.html?id=3geYp44hJVcC&hl=en) 
