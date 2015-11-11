@@ -62,6 +62,10 @@ will be located at `jogo-lang-ide/target/jfx/app`. To execute the JAR type in
     
 from within that directory.
 
+## Examples
+
+Examples that show the language features of JOGO are located in `src/main/jogo`.
+
 ## License
 
 This software is released under the terms of the MIT license
